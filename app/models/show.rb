@@ -4,8 +4,7 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
   belongs_to :network
   
-  self.characters.map do |c|
-            "#{c.actor.full_name}"
-        end
-    end
+  def actors_list
+    
+  end 
 end
